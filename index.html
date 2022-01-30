@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .calc{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Расчет стоимости автомобиля</h1>
+    <div class="form">
+        <div class="selected-form">
+            <label for="select1">Марка</label>
+            <select id="select1" class="selectVal">
+                <option value="1000">Audi</option>
+                <option value="3000">Bentley</option>
+                <option value="2000">BMW</option>
+                <option value="1000">Cadillac</option>
+                <option value="500">Chevrolet</option>
+            </select>
+        </div>
+    
+        <div class="selected-form">
+            <label for="select2">Год</label>
+            <select id="select2" class="selectVal">
+                <option value="500">2021</option>
+                <option value="300">2020</option>
+                <option value="250">2019</option>
+            </select>
+        </div>
+
+        <div class="selected-form">
+            <label for="select3">Комлектация</label>
+            <select id="select3" class="selectVal">
+                <option value="1500">Базовая</option>
+                <option value="2500">Средняя</option>
+                <option value="3500">Максимальная</option>
+            </select>
+        </div>
+        </div>
+
+    <form name="formText">
+        <div>
+            <p>Вид топлива</p>
+            <input type="radio" name="fuel" id="r1" value="200">Бензин
+            <input type="radio" name="fuel" id="r2" value="100">Дизельное топливо
+        </div>
+
+        <div>
+            <p>Дополнительные услуги</p>
+            <input type="checkbox" id="r3" value="500">Страхование<BR>
+            <input type="checkbox" id="r4" value="200">Помощь в оформлении кредита<BR>
+            <input type="checkbox" id="r5" value="1500">Годовое обслуживание автомобиля
+        </div>
+
+        <div>
+            <BR><input type="button" onclick="getSum()" value="Расчет стоимости"><BR>
+        </div>
+
+        <div>
+            <br>Сумма:<br>
+            <input type="text" name="sumOut" disabled="false" value="">
+        </div>
+    </form>
+
+<script src="script.js"></script>
+</body>
+
+</html>

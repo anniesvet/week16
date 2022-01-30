@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-form {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 3px;
+
+    max-width: 250px;
+}
